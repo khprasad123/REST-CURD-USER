@@ -1,0 +1,22 @@
+{
+  "name": "ryde_challenge",
+  "version": "1.0.0",
+  "description": "As part of Ryde Back-end Developer Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khprasad123/REST-CURD-USER.git"
+  },
+  "keywords": [
+    "CURD"
+  ],
+  "author": "Hariprasad Kottarathil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khprasad123/REST-CURD-USER/issues"
+  },
+  "homepage": "https://github.com/khprasad123/REST-CURD-USER#readme"
+}
