@@ -4,7 +4,8 @@
   "description": "As part of Ryde Back-end Developer Test",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon -L index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/khprasad123/REST-CURD-USER/issues"
   },
-  "homepage": "https://github.com/khprasad123/REST-CURD-USER#readme"
+  "homepage": "https://github.com/khprasad123/REST-CURD-USER#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
