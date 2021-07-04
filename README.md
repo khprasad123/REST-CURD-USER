@@ -18,6 +18,7 @@ npm start # for starting the application
 npm run dev # for starting development server
 npm test # for running basic test scripts  
 ```
+Api documentation available at : [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
 to run as Container :
  
@@ -39,6 +40,8 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v #for unde
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml down -v #for undeploy in development mode (removes the persistant volume too)
 
 ```
+Api documentation available at : [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
