@@ -41,21 +41,7 @@ test("GET /api/v1/users", async () => {
       .then((response) => {
         // Check type and length
         expect(response.body.length).toEqual(1);
-        console.log(response.body.data.users[0]);
-      });
+        expect(response.body.data.users[0].name).toBe(user.name);
+    });
   });
 
-// test("GET /api/v1/users", async () => {
-//     const user = await User.create({ name: "Kavya", dob: "041519696" });
-  
-//     await supertest(app).get("/api/v1/users")
-//       .expect(200)
-//       .then((response) => {
-//         // Check type and length
-//         expect(response.body.length).toEqual(1);
-  
-//         // Check data
-//         expect(response.body[0].users._id).toBe(user.id);
-//         expect(response.body[0].users.name).toBe(user.name);
-//       });
-// });
