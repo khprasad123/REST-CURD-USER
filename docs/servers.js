@@ -7,12 +7,8 @@ const {
 module.exports = {
     servers:[
         {
-            url:`http://localhost:${PORT}`,
-            description:"Local server"
-        },
-        {
             url:`http://${SYSTEM_IP}:${PORT}`,
-            description:"Cloud Server"
+            description:"Running Server"
         },
     ]
 }
