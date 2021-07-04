@@ -22,7 +22,7 @@ module.exports = {
         // content-type
         "application/json": {
           schema: {
-            $ref: "#/components/schemas/userInput", // todo input data model
+            $ref: "#/components/schemas/userInput", 
           },
         },
       },

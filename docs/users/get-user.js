@@ -20,12 +20,12 @@ module.exports = {
     responses: {
       // response code
       200: {
-        description: "User is obtained", // response desc.
+        description: "User is obtained", 
         content: {
           // content-type
           "application/json": {
             schema: {
-              $ref: "#/components/schemas/user", // todo data model
+              $ref: "#/components/schemas/user", 
             },
           },
         },

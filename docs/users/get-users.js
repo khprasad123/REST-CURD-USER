@@ -14,7 +14,7 @@ module.exports = {
            // content-type
            "application/json": {
              schema: {
-               $ref: "#/components/schemas/user", // Todo model
+               $ref: "#/components/schemas/user", 
              },
            },
          },
