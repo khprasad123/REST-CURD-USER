@@ -19,9 +19,9 @@ npm run dev # for starting development server
 npm test # for running basic test scripts  
 ```
 
-If Run as Container :
+to run as Container :
  
-To run in production mode environment variable should be setup inside the container after docker compose.
+to run in production mode environment variable should be setup inside the container after docker compose.
 
 Basic Environment variables can be found at : [env](https://github.com/khprasad123/REST-CURD-USER/blob/master/config/setEnv.sh)
 
