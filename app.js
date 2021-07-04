@@ -18,10 +18,5 @@ app.use(function(err, req, res, next){
 //initialize routes
 app.use('/api/v1/', userRoutes);
 app.use('/api-docs',swaggerUI.serve,swaggerUI.setup(docs));
-//testing route
-app.get("/api/v1", (req,res) => {
-    res.send("<h1>AFTER WATCH TOWER INSTALLATION</h1>");
-    console.log("yeah it run--- made chahges");
-});
 
 module.exports= app;

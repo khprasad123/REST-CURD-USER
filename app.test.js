@@ -34,27 +34,28 @@ afterEach((done) => {
 
 
 test("GET /api/v1/users", async () => {
-    const user = await User.create({ name: "Kavya", dob: "15/04/1996" });
+    const user = await User.create({ name: "Kavya", dob: "15041996" });
   
     await supertest(app).get("/api/v1/users")
       .expect(200)
       .then((response) => {
         // Check type and length
         expect(response.body.length).toEqual(1);
+        console.log(response.body.data.users[0]);
       });
   });
 
-test("GET /api/v1/users", async () => {
-    const user = await User.create({ name: "Kavya", dob: "041519696" });
+// test("GET /api/v1/users", async () => {
+//     const user = await User.create({ name: "Kavya", dob: "041519696" });
   
-    await supertest(app).get("/api/v1/users")
-      .expect(200)
-      .then((response) => {
-        // Check type and length
-        expect(response.body.length).toEqual(1);
+//     await supertest(app).get("/api/v1/users")
+//       .expect(200)
+//       .then((response) => {
+//         // Check type and length
+//         expect(response.body.length).toEqual(1);
   
-        // Check data
-        expect(response.body[0].users._id).toBe(user.id);
-        expect(response.body[0].users.name).toBe(user.name);
-      });
-});
+//         // Check data
+//         expect(response.body[0].users._id).toBe(user.id);
+//         expect(response.body[0].users.name).toBe(user.name);
+//       });
+// });

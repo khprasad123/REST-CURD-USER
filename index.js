@@ -5,6 +5,7 @@ const {
     MONGO_PASSWORD, 
     MONGO_PORT, 
     MONGO_IP, 
+    PORT
 } =require("./config/config");
 
 //setting the connection URL
@@ -29,5 +30,4 @@ const connectWithRetry = () => {
 connectWithRetry();
 
 //listen for requests
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`listening on port ${port}`));
+app.listen(PORT, () => console.log(`listening on port ${PORT}`));
