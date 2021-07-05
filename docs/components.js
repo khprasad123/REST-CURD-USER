@@ -55,8 +55,8 @@ module.exports = {
                     },
                     dob: {
                         type: "date", 
-                        description: "Date of birth of user", 
-                        example: "12/04/1996", 
+                        description: "Date of birth of user YYYY-MM-DD)", 
+                        example: "12-04-1996", 
                     },
                     address: {
                         type: "string",
